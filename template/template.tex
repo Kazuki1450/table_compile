@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{multirow,booktabs,caption,graphicx,tabularx}
+\usepackage{arydshln}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathtools}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{table}[h]
+    \centering
+    \renewcommand{\arraystretch}{1.2}
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{ccc}
+            \toprule
+            Col1 & \multicolumn{2}{c}{Col2} \\
+            \cmidrule{2-3}
+            Col1-1 & Col2-1 & Col2-2 \\
+            \midrule
+            0 & 0 & 0 \\
+            \bottomrule
+        \end{tabular}
+    }
+\end{table}
+
+
+\end{document}
